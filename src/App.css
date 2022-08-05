@@ -11,13 +11,13 @@ img{
   width: 50px;
 }
 .container{
-width: 600px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  place-content: center;
   align-items: center;
   background-color: rgb(255, 245, 245);
-
 }
 .card{
   width: 400px;
@@ -28,7 +28,8 @@ width: 600px;
   align-items: center;
   background-color: rgb(255, 210, 210);
   margin: 20px;
-  border-radius:20px 20px
+  border-radius:20px 20px;  
+  box-shadow: 0 0 10px rgb(10, 10, 10);
 }
 .card img{
   width: 150px;
@@ -44,16 +45,27 @@ width: 600px;
   justify-content: center;
   border-radius: 10px;
   margin: 10px;
-  padding: 20px;
+  padding: 20px;  
+  box-shadow: 0 0 10px rgb(10, 10, 10);
 }
-
+.cards button{
+  padding: 10px;
+  margin:  0 0 0 20px;
+  background-color: rgb(220, 210, 255);
+  cursor:pointer ;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  border: 1px solid rgb(255, 228, 177);
+}
 .creditCard{
   width: 280px;
   height: 150px;
   margin: 20px;
   background-color: rgb(253, 226, 226);
   border-radius: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 2px;  
+  box-shadow: 0 0 10px rgb(15, 15, 15);
 }
 .creditCard h3{
   font-size: 20px;
@@ -74,7 +86,8 @@ width: 600px;
   justify-content: end;
 }
 .containerRating{
-  display: flex;
+  display: flex;  
+  box-shadow: 0 0 10px rgb(19, 19, 19);
 }
 .rating{
   width: 50px;
@@ -92,8 +105,9 @@ width: 600px;
   align-items: center; 
   background-color: rgb(76, 107, 207);
   border-radius: 10px;
-  color:white;
-  font-size: 14px; 
+  color:rgb(240, 240, 240);
+  font-size: 14px;   
+  box-shadow: 0 0 10px black;
 }
 .driverCard img{
   width: 20px;
@@ -105,5 +119,63 @@ width: 600px;
   height: 75px;
   padding: 10px;
 }
+.likesCard{
+  width: 400px;
+  height: 100px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgb(253, 229, 183);
+  border-radius: 10px;
+  font-size: 40px;
+  box-shadow: 0 0 10px black;
+}
+.card button{
+  padding: 10px;
+  background-color: rgb(220, 210, 255);
+  cursor:pointer ;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  border: 1px solid rgb(255, 228, 177);
+}
+.likesCard button{
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+.containerTable{
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tableBackWhite{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.tableBackRed{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: rgb(241, 0, 0);
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  border: 1px solid rgb(15, 15, 15);
+}
+
 
 
