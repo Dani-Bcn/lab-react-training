@@ -14,10 +14,11 @@ import ClickablePicture from './components/ClickablePicture'
 import Dice from './components/Dice'
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
+import ChooseColor from './components/ChooseColor';
 
-
-function App() {
-  
+function App() {  
   return (
     <div className='container'>
       <IdCard
@@ -40,7 +41,7 @@ function App() {
       <Greetings lang='es'></Greetings>
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
-      <BoxColor r={255} g={215} b={12} />
+      <BoxColor r={255} g={125} b={12} />
       <BoxColor r={128} g={20} b={25} />
       <CreditCard
         type="Visa"
@@ -72,20 +73,19 @@ function App() {
         bgColor="#ddbb55"
         color="white" 
       />
-      <Rating children={4}></Rating>
+      <Rating children={5}></Rating>
       <DriverCard
         name="Travis Kalanick"
-        rating={1.6}
+        rating={2.8}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
         car={{
           model: "Toyota Corolla Altis",
           licensePlate: "CO42DE"
         }}
       />
-
       <DriverCard
         name="Dara Khosrowshahi"
-        rating={2.6}
+        rating={1.6}
         img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
         car={{
           model: "Audi A3",
@@ -106,10 +106,11 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
-      <NumbersTable limit={12} />
-      
+      <NumbersTable limit={12}/>
+      <FaceBook/>
+      <SignupPage/>
+      <ChooseColor/> 
     </div>
-  );
+   );
 }
-
 export default App;

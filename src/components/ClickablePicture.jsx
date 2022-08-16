@@ -6,7 +6,7 @@ const ClickablePicture = ({img,imgClicked}) => {
     const [picture, setPicture] = useState(img)
     const changePicture =()=>{
         setState(state => !state)
-        state?setPicture(picture=> imgClicked):setPicture(picture=> img)        
+        state?setPicture(picture => imgClicked):setPicture(picture=> img)        
     }
     return (
         <div className='card'>

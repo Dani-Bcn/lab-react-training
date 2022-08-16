@@ -4,6 +4,7 @@ import StarBlack from '../assets/images/starBlack.png';
 
 
 export default function Rating(rating) {
+
     const stars = Math.round(rating.children)
     const starsPaint=[]
     const arrayStars=[StarWhite, StarWhite, StarWhite, StarWhite, StarWhite]      
@@ -21,5 +22,5 @@ export default function Rating(rating) {
             })
             }      
         </div>
-  )
+    )
 }
