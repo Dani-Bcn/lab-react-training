@@ -24,7 +24,7 @@ const FaceBook = () => {
            </div>                         
             {profile.map(ele=>{                                                                     
                 return(                     
-                   <div >    
+                   <div key={ele.name}>    
                        {ele.country === country? styl="cardBgBlue" :styl="card"}
                      <div className={styl}> 
                         <span>
